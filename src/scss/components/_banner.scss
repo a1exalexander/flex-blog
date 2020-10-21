@@ -1,0 +1,31 @@
+$style: banner;
+
+.#{$style} {
+  background-color: red;
+  position: relative;
+  @include flex;
+  min-height: 540px;
+  &__image {
+    @extend %cover-image;
+  }
+  &__inner {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    @include flex(flex-end, flex-start, column);
+    padding: 40px 43px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  &__title {
+    @include text(30px, 700, white);
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    max-width: 433px;
+    line-height: 1.3;
+  }
+  &__date {
+    @include date($white);
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,34 @@
+$style: card;
+
+.#{$style} {
+  min-height: 540px;
+  @include flex(flex-start, stretch, column);
+  background-color: $white;
+  @media screen and (min-width: 420px) {
+    min-width: 360px;
+  }
+  &__image-wrapper {
+    position: relative;
+    background-color: grey;
+    height: 251px;
+  }
+  &__image {
+    @extend %cover-image;
+  }
+  &__content {
+    flex-grow: 1;
+    padding: 28px 28px 25px;
+    @include flex(space-between, stretch, column);
+  }
+  &__date {
+    display: inline-block;
+    @include date($braun);
+    margin-bottom: 21px;
+  }
+  &__title {
+    @include text(22px, 700, $dark);
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+}

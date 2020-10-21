@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import './vars';
 @import './mixins';
+@import './inheritance';
 @import './common';
 
 @import './components/grid';
+@import './components/banner';
+@import './components/card';
+@import './components/avatar';

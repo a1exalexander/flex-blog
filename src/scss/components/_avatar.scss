@@ -1,0 +1,11 @@
+$style: avatar;
+$size: 54px;
+
+.#{$style} {
+  @include size($size, true);
+  background-color: $grey-dark;
+  &__image {
+    width: $size;
+    border-radius: 50%;
+  }
+}

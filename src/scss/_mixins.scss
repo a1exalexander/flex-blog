@@ -132,3 +132,9 @@ $screen-retina: 1660px;
     @content;
   }
 }
+
+@mixin date($color) {
+  @include text(13px, 500, $color);
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+}

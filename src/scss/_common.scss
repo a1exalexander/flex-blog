@@ -4,7 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: darken($grey, 10%);
+  padding: 90px 32px;
+}
+body, input, button, textarea, select {
+  font-family: $base-font;
+}
+
 .container {
-  max-width: 1240px;
+  max-width: 1120px;
   margin: 0 auto;
 }
